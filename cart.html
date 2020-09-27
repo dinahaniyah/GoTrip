@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoTrip</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="css/style.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="index.html"> <img src="image/gotrip.png" style="width: 65%;" class="img-responsive"></a>
+    </div>
+<!-- KATEGORI -->
+<!--     <a href="#menu" id="toggle"><span></span></a>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+ -->
+
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          <ul class="dropdown-menu makalu" style="text-transform: none;">
+            <li><a href="katalog.html">Promo</a></li>
+            <li><a href="katalog.html">OpenTrip </a></li>
+            <li><a href="katalog.html">1 Day Trip</a></li>
+            <li><a href="katalog.html">Honeymoon</a></li>
+            <li><a href="katalog.html">Paket Wisata</a></li>
+          </ul>
+
+        </li>
+      </ul>    
+      <form class="navbar-form navbar-left" role="search" id="search">
+            <div class="input-group"  >
+              <input type="text" placeholder="Kemana tujuan anda?" class="form-control" />
+              <span class="input-group-btn">
+                <button id="search" class="btn btn-primary btn-block" ><span class="glyphicon glyphicon-search"></span></button></span></div> <i style="font-size: 14px;color:grey; ">atau</i>        
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span>Gunakan Peta</span></button>
+          <ul class="dropdown-menu makala" style="text-transform: none; float: center;">
+          <a href="katalog.html"><img src="image/peta.png" class="img-responsive" style="width: 100%; "></a>
+          </ul>
+
+       
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="daftar.html"> <button class="btn btnatas btn-primary">Daftar</button></a> 
+          <a href="#myModalMasuk"> <button class="btn btnatas btn-success" data-toggle="modal" data-target="#myModalMasuk">Masuk</button></a> 
+          
+          <!-- <div class="dropdown"> -->
+          <button data-toggle="dropdown" id="dLabel" data-target="#" href="/page.html" class="btn btncart btn-default"> <span class="badge-cart"><b>3</b></span><span class="glyphicon glyphicon-shopping-cart"></span>Keranjang</button>
+
+
+              <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+                
+                <div class="notification-heading"><h4 class="menu-title"><b>Keranjang Anda</b></h4>
+                </div>
+                <li class="divider"></li>
+               <div class="notifications-wrapper">
+                 <a class="content" href="#">
+                  
+                   <div class="notification-item">
+                   
+                  </div>
+                   
+                </a
+                 <a class="content" href="#">
+                  <div class="notification-item">
+                  
+                  </div>
+                </a>
+                 <a class="content" href="#">
+                  <div class="notification-item">
+                
+                  </div>
+                </a>
+
+
+               </div>
+                <li class="divider"></li>
+                <div class="notification-footer"><h4 class="menu-title">Lanjutkan Pembayaran<i class="glyphicon glyphicon-circle-arrow-right"></i></h4></div>
+              </ul>
+              
+
+
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+
+ <!-- MODAL -->
+  <!-- Modal -->
+  <div class="modal fade" id="editModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ganti Pesanan</h4>
+        </div>
+        <div class="modal-body">
+            <div class="col-sm-2">
+              <img src="image/aksesoris/putih-kalimantan.png" class="img-responsive" style="width: 100%;">
+            </div>
+            <div class="col-sm-10">
+             <b> KERANJANG ROTAN-SMALL</b><br>
+             (toko)
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- HABIS -->
+
+<div class="under-navbar">
+  <div class="container-fluid">
+    <div class="cart-aja" id="cart" >
+      <h2>Konfirmasi Transaksi Pembelian</h2>
+      <div class="row">
+      <div class="col-sm-12">
+      <div class="panel panel-body a9">
+        <!-- <h4><b>KERANJANG PESANAN</b></h4><br> -->
+        <div class="panel-body apa">
+        <!-- <div class="col-sm-1"> </div> -->
+        <div class="col-sm-3">
+          <img src="image/onetrip/2.png" class="img-responsive img-rounded">
+        </div>
+        <b>Paket Trip Wisata Lombok</b><br> <div class="text-muted"> <b> WisataLOvers </b></div><hr>
+
+        <div class="col-sm-4">
+        
+        <b>Keterangan</b><br>
+        <div class="col-sm-6 ">
+          Tanggal Perjalanan<br>
+        </div>
+        <div class="col-sm-4">
+        2 Mei 2017
+        </div>
+        <br>
+        <div class="col-sm-6">
+        Durasi Perjalanan
+        </div>
+        <div class="col-sm-4">
+        2 hari 1 malam
+        </div>
+        <br><br>
+        
+        <div class="col-sm-offset-2">TOTAL HARGA<b>  13.000.000 </b>
+        </div>
+          </div>
+
+        <div class="col-sm-2" >
+        <b>Jumlah</b><br>
+        2
+
+        </div>
+
+        <div class="col-sm-3" >
+        <b>@Satuan</b><br>
+        6.500.000/Pax
+        </div>
+
+        </div>
+      </div>
+        
+    
+      
+      </div>
+
+    </div>
+
+      <div class="row">
+      <div class="col-sm-12">
+      <div class="panel panel-body a9">
+        <!-- <h4><b>KERANJANG PESANAN</b></h4><br> -->
+        <div class="panel-body apa">
+        <!-- <div class="col-sm-1"> </div> -->
+        <div class="col-sm-3">
+          <img src="image/kokop.png" class="img-responsive img-rounded">
+        </div>
+        <b>Paket Trip Jogja</b><br> <div class="text-muted"> <b> WisataAja </b></div><hr>
+
+        <div class="col-sm-4">
+        
+        <b>Keterangan</b><br>
+        <div class="col-sm-6 ">
+          Tanggal Perjalanan<br>
+        </div>
+        <div class="col-sm-4">
+        12 Agustus 2017
+        </div>
+        <br>
+        <div class="col-sm-6">
+        Durasi Perjalanan
+        </div>
+        <div class="col-sm-4">
+        4 hari 3 malam
+        </div>
+        <br><br>
+        
+        <div class="col-sm-offset-2">TOTAL HARGA<b>  5.400.000 </b>
+        </div>
+          </div>
+
+        <div class="col-sm-2" >
+        <b>Jumlah</b><br>
+        1
+
+        </div>
+
+        <div class="col-sm-3" >
+        <b>@Satuan</b><br>
+        5.400.000/Pax
+        </div>
+
+        </div>
+      </div>
+        
+    
+      
+      </div>
+
+    </div>
+    
+<br>
+  <h3>Proses Pembayaran</h3>
+    <div class="col-sm-4 bayar">
+      <div class="panel panel-body mempem">
+        <b>DATA PEMBELI</b><br><br>
+
+        Dapatkan Kemudahan dengan Beli dengan menggunakan akun anda<br>
+        <a href=""> daftar/masuk</a>
+        <hr>
+        atau
+        Beli tanpa menggunakan akun?
+        <div class="form-group">
+        <br>
+            <div class="form-group">
+              Nama Kontak
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+              No Telp
+              <input type="password" class="form-control" id="pwd">
+            </div>
+
+            <div class="form-group">
+              Email
+              <input type="password" class="form-control" id="pwd">
+            </div>
+        </div>
+              
+      </div>
+    </div>
+
+    <div class="col-sm-4 bayar">
+      <div class="panel panel-body mempem">
+        <b>METODE PEMBAYARAN</b><br><br>
+        <div class="half">
+
+            <div class="tab blue" id="blabal">
+              <input id="tab-four" type="radio" name="tabs2" class="radioaja">
+              <label for="tab-four" class="radioaja1">Transfer Bank</label>
+              <div class="tab-content">
+                <p>Transfer Bank<br>
+                Rekening : 29048-093-39-3847<br>Atas Nama: PT. GOTRIP</p>
+
+              </div>
+            </div>
+            <div class="tab blue">
+              <input id="tab-five" type="radio" name="tabs2" class="radioaja">
+              <label for="tab-five" class="radioaja1">Kartu Kredit</label>
+              <div class="tab-content">
+                <p>1.Lorem ipsum dolor sit amet, <br>2.consectetur adipisicing elit. Tenetur, architecto,<br>3. explicabo perferendis nostrum, <br>4. maxime impedit atque odit sunt pariatur.</p>
+              </div>
+            </div>
+            <div class="tab blue">
+              <input id="tab-six" type="radio" name="tabs2" class="radioaja">
+              <label for="tab-six" class="radioaja1">Mobile Banking</label>
+              <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+          
+
+
+
+    </div>
+
+    <div class="col-sm-4 bayar">
+      <div class="panel panel-body mempem">
+        <b>RINGKASAN PEMBAYARAN</b><br><br>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Nama Trip</th>
+                <th>Jumlah</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TripJogja</td>
+                <td>2</td>
+                <td>Rp. 4.500.000</td>
+              </tr>
+              <tr>
+                <td>Lombok</td>
+                <td>1</td>
+                <td>Rp. 200.000</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          TOTAL  <b>Rp 4.700.000</b>
+
+          <div id="sip" class="produk-baru">
+                    <br>
+            <a href="invoice.html" style="text-decoration: none;"><button type="button" class="btn btn-success btn-block">LANJUTKAN BAYAR</button></a>
+          </div>  
+      </div>
+    </div>
+
+
+  <div>
+</div>  
+
+
+
+
+	</div>	
+</div>
+<!-- <div class="dropup">
+  <a "><img src="image/msg.png" class="img-responsive" data-toggle="dropdown" style="position:fixed;bottom:5px;right:5px;margin:0;padding:0px 0px; width: 60px">GO BACK</a>
+      <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+</div> -->
+<!--   <div class="dropup" style="position:fixed;bottom:30px;right:80px;margin:0;padding:0px 0px;">
+    <img src="image/msg.png" class="img-responsive dropdown-toggle" data-toggle="dropdown" style="position:fixed;bottom:5px;right:5px;margin:0;padding:0px 0px; width: 60px">
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div> -->
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Berlangganan </h3>
+        
+          <p>Dapatkan informasi terbaru dan bermanfaat yang akan kami bagikan kepada anda</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Masukkan Email Anda" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Langganan</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>Tentang Kami</h3>
+        
+        <p>
+            <a href="carakerja.html"> Apa yang kami lakukan?</a> <br>
+            <div class="space"> </div>
+            <a href="mitra.html"> Mitra Kami</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Bantuan</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Temukan Kami</h3>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+      <script src="js/carousel.js"></script>
+</body>
+</html>

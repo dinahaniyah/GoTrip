@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoTrip</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="css/style.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="index.html"> <img src="image/gotrip.png" style="width: 65%;" class="img-responsive"></a>
+    </div>
+<!-- KATEGORI -->
+<!--     <a href="#menu" id="toggle"><span></span></a>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+ -->
+
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          <ul class="dropdown-menu makalu" style="text-transform: none;">
+            <li><a href="katalog.html">Promo</a></li>
+            <li><a href="katalog.html">OpenTrip </a></li>
+            <li><a href="katalog.html">1 Day Trip</a></li>
+            <li><a href="katalog.html">Honeymoon</a></li>
+            <li><a href="katalog.html">Paket Wisata</a></li>
+          </ul>
+
+        </li>
+      </ul>    
+      <form class="navbar-form navbar-left" role="search" id="search">
+            <div class="input-group"  >
+              <input type="text" placeholder="Kemana tujuan anda?" class="form-control" />
+              <span class="input-group-btn">
+                <button id="search" class="btn btn-primary btn-block" ><span class="glyphicon glyphicon-search"></span></button></span></div> <i style="font-size: 14px;color:grey; ">atau</i>        
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span>Gunakan Peta</span></button>
+          <ul class="dropdown-menu makala" style="text-transform: none; float: center;">
+          <a href="katalog.html"><img src="image/peta.png" class="img-responsive" style="width: 100%; "></a>
+          </ul>
+
+       
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="daftar.html"> <button class="btn btnatas btn-primary">Daftar</button></a> 
+          <a href="#myModalMasuk"> <button class="btn btnatas btn-success" data-toggle="modal" data-target="#myModalMasuk">Masuk</button></a> 
+          
+          <!-- <div class="dropdown"> -->
+          <button data-toggle="dropdown" id="dLabel" data-target="#" href="/page.html" class="btn btncart btn-default"> <span class="badge-cart"><b>3</b></span><span class="glyphicon glyphicon-shopping-cart"></span>Keranjang</button>
+
+
+              <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+                
+                <div class="notification-heading"><h4 class="menu-title"><b>Keranjang Anda</b></h4>
+                </div>
+                <li class="divider"></li>
+               <div class="notifications-wrapper">
+                 <a class="content" href="#">
+                  
+                   <div class="notification-item">
+                   
+                  </div>
+                   
+                </a
+                 <a class="content" href="#">
+                  <div class="notification-item">
+                  
+                  </div>
+                </a>
+                 <a class="content" href="#">
+                  <div class="notification-item">
+                
+                  </div>
+                </a>
+
+
+               </div>
+                <li class="divider"></li>
+                <div class="notification-footer"><h4 class="menu-title">Lanjutkan Pembayaran<i class="glyphicon glyphicon-circle-arrow-right"></i></h4></div>
+              </ul>
+              
+
+
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+<div class="under-navbar">
+<img src="image/bg.png" class="img-responsive">
+  <div class="container-fluid">
+
+     <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li class="active">One Day Trip</li>
+    </ol>
+
+    <div class="col-sm-3" id="filertotal" >
+      <div id="filter-utama" class="breadcrumb"><b> FILTER PRODUK </b></div>
+      <div class="filter">
+
+        <div class="filter-1">
+          <h4 style="text-align: center;">Durasi Wisata</h4>
+          <div id="slider"> <img src="image/HARI.png" class="img-responsive"></div>
+        </div>
+
+        <div class="filter-1">
+          <h4 style="text-align: center;">Harga</h4>
+          <div id="slider"> <img src="image/IDR.png" class="img-responsive"></div>
+        </div>
+
+        <div class="filter-1">
+          <h4 style="text-align: center;">Rating</h4>
+            <img src="image/rating.png" class="img-responsive" style="width: 50%">
+        </div>
+
+      </div>  
+    </div>
+
+
+  <div id="barang" class="col-sm-9">
+      <h3>Ditemukan 35 Paket Wisata</h3>
+      <div class="col-sm-offset-8" style="float: left;">
+      <form class="form-inline">  
+      <div class="form-group">
+      <label for="email">Urutkan Berdasarkan</label>
+      <select class="form-control" id="sel1">
+        <option>Terlaris</option>
+        <option>Terbaru</option>
+        <option>Termurah</option>
+      </select>
+      </div>
+      </form></div><br>
+
+      <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/onetrip/1.png" class="img-responsive"></a>
+            <div class="harga" >Rp 6.500.000/Pax</div>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/honeymoon/6.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/honeymoon/2.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/honeymoon/3.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+      </div>    
+
+      <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/honeymoon/4.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+      </div>  
+
+      <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/honeymoon/5.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+      </div>  
+
+
+  </div>
+
+
+
+		</div>
+  </div>
+</div>  
+
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Berlangganan </h3>
+        
+          <p>Dapatkan informasi terbaru dan bermanfaat yang akan kami bagikan kepada anda</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Masukkan Email Anda" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Langganan</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>Tentang Kami</h3>
+        
+        <p>
+            <a href="carakerja.html"> Apa yang kami lakukan?</a> <br>
+            <div class="space"> </div>
+            <a href="mitra.html"> Mitra Kami</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Bantuan</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Temukan Kami</h3>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+      <script src="js/carousel.js"></script>
+</body>
+</html>

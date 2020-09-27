@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoTrip</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="css/style.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="index.html"> <img src="image/gotrip.png" style="width: 65%;" class="img-responsive"></a>
+    </div>
+<!-- KATEGORI -->
+<!--     <a href="#menu" id="toggle"><span></span></a>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+ -->
+
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          <ul class="dropdown-menu makalu" style="text-transform: none;">
+            <li><a href="katalog.html">Promo</a></li>
+            <li><a href="katalog.html">OpenTrip </a></li>
+            <li><a href="katalog.html">1 Day Trip</a></li>
+            <li><a href="katalog.html">Honeymoon</a></li>
+            <li><a href="katalog.html">Paket Wisata</a></li>
+          </ul>
+
+        </li>
+      </ul>    
+      <form class="navbar-form navbar-left" role="search" id="search">
+            <div class="input-group"  >
+              <input type="text" placeholder="Kemana tujuan anda?" class="form-control" />
+              <span class="input-group-btn">
+                <button id="search" class="btn btn-primary btn-block" ><span class="glyphicon glyphicon-search"></span></button></span></div> <i style="font-size: 14px;color:grey; ">atau</i>        
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span>Gunakan Peta</span></button>
+          <ul class="dropdown-menu makala" style="text-transform: none; float: center;">
+          <a href="katalog.html"><img src="image/peta.png" class="img-responsive" style="width: 100%; "></a>
+          </ul>
+
+       
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="daftar.html"> <button class="btn btnatas btn-primary">Daftar</button></a> 
+          <a href="#myModalMasuk"> <button class="btn btnatas btn-success" data-toggle="modal" data-target="#myModalMasuk">Masuk</button></a> 
+          
+          <!-- <div class="dropdown"> -->
+          <button data-toggle="dropdown" id="dLabel" data-target="#" href="/page.html" class="btn btncart btn-default"> <span class="badge-cart"><b>3</b></span><span class="glyphicon glyphicon-shopping-cart"></span>Keranjang</button>
+
+
+              <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+                
+                <div class="notification-heading"><h4 class="menu-title"><b>Keranjang Anda</b></h4>
+                </div>
+                <li class="divider"></li>
+               <div class="notifications-wrapper">
+                 <a class="content" href="#">
+                  
+                   <div class="notification-item">
+                   
+                  </div>
+                   
+                </a
+                 <a class="content" href="#">
+                  <div class="notification-item">
+                  
+                  </div>
+                </a>
+                 <a class="content" href="#">
+                  <div class="notification-item">
+                
+                  </div>
+                </a>
+
+
+               </div>
+                <li class="divider"></li>
+                <div class="notification-footer"><h4 class="menu-title">Lanjutkan Pembayaran<i class="glyphicon glyphicon-circle-arrow-right"></i></h4></div>
+              </ul>
+              
+
+
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+ <!-- MODAL -->
+ <div class="modal fade" id="myModalMasuk" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4><span class="glyphicon glyphicon-user"></span> Masuk</h4>
+          </div>
+
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Masukkan Email" required="">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Masukkan Kata Sandi" required="">
+              </div>
+            </form>
+                <a href="donasi.html" style="text-decoration:none; color:black"><button class="btn btn-block">Masuk
+                  <span class="glyphicon"></span></button> 
+                </a>
+                <a href="#"><i class="sandi"> Lupa Kata Sandi ? </i> </a>
+          </div>
+
+          <div class="modal-footer">
+          <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-primary btn-default ">
+                <i class="fa fa-facebook" aria-hidden="true"></i> Masuk dengan Facebook
+              </a>
+
+              <a href="donasi.html" class="btn btn-danger btn-default">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>Masuk dengan Google+
+              </a>
+          </div>
+          </div>
+      </div>
+
+    </div>
+  </div>  
+
+<!-- HABIS -->
+
+<div class="carousel-awal"> 
+<img src="image/wisata.png" class="img-responsive">
+</div>
+
+
+<!-- <div class="wiwi"> -->
+  <div class="container-fluid">
+    <div id="wisata" class="produk-promo">
+      <h2> Koleksi Wisata Populer </h2>
+      <br>
+      <div class=" col-sm-offset-1 col-sm-3">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/edisi/1.png" class="img-responsive"></a>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/edisi/2.png" class="img-responsive"></a>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/edisi/3.png" class="img-responsive"></a>
+          </div>
+      </div>      
+
+      <div class="col-sm-offset-1 col-sm-4 a">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/edisi/4.png" class="img-responsive"></a>
+          </div>
+      </div>  
+
+      <div class="col-sm-4 a">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/edisi/5.png" class="img-responsive"></a>
+          </div>
+      </div> 
+ 
+      </div>
+    </div>
+<!-- </div> -->
+<div class="wiwi">
+  <div class="container-fluid">
+    <div id="wisata" class="wisata-baru">
+    <h2>Destinasi Wisata Populer</h2>
+      <br>     <!--    <div class="col-sm-12"> -->
+      <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/onetrip/1.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+              <h3 style="text-align: center;"><b>Yogyakarta</b></h3>
+            </div>
+          </div>
+      </div>           
+
+      <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/honeymoon/1.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+              <h3 style="text-align: center;"><b>Lombok</b></h3>
+            </div>
+          </div>
+      </div> 
+
+      <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/honeymoon/2.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+              <h3 style="text-align: center;"><b>Karimun Jawa</b></h3>
+            </div>
+          </div>
+      </div> 
+
+      <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="katalog.html"><img src="image/honeymoon/3.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+              <h3 style="text-align: center;"><b>Bali</b></h3>
+            </div>
+          </div>
+      </div>             
+      </div>
+    </div>
+  </div>
+
+
+<div class="container-fluid">
+    <div id="wisata" class="produk-dilihat">
+    <h2>Info Berwisata</h2>
+     <br>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+          <a href=""><div class="media">
+            <div class="media-left media-top">
+              <img src="image/qweee.png" class="media-object" style="width:200px">
+            </div>
+            <div class="media-body">
+              <h3>Belajar Berenang</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi
+            </div>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+          <a href=""><div class="media">
+            <div class="media-left media-top">
+              <img src="image/wewerr.png" class="media-object" style="width:200px">
+            </div>
+            <div class="media-body">
+              <h3>Belajar Berselancar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi 
+            </div>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+          <a href=""><div class="media">
+            <div class="media-left media-top">
+              <img src="image/lole.png" class="media-object" style="width:200px">
+            </div>
+            <div class="media-body">
+              <h3>Gunung Rinjani</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi 
+            </div>
+            </div></a>
+          </div>
+        </div>                                
+
+    </div>
+    </div>
+<div class="wiwi">
+  <div id="wisata" class="produk-dilihat">
+    <div class="container-fluid">
+      <h2>Mengapa Kami?</h2>
+      <img src="image/tawar.png" class="img-responsive">
+    </div>
+  </div>  
+</div>
+
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-4 text-left">
+        <h3> Berlangganan </h3>
+        
+          <p>Dapatkan informasi terbaru dan bermanfaat yang akan kami bagikan kepada anda</p>
+          <div class="content">
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Masukkan Email Anda" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Langganan</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-2" id="footer">
+        <h3>Tentang Kami</h3>
+        
+        <p>
+            <a href="carakerja.html"> Apa yang kami lakukan?</a> <br>
+            <div class="space"> </div>
+            <a href="mitra.html"> Mitra Kami</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-2" id="footer">
+        <h3>Bantuan</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-4" id="footer">
+        <h3>Temukan Kami</h3>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
